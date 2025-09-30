@@ -1,70 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
-    <style>
-        body {
-            font-family: 'Creepster', 'Orbitron', Arial, sans-serif;
-            margin: 0;
-            background: radial-gradient(ellipse at top left, #2c003e 0%, #0f2027 60%, #1a0000 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            animation: bgWeird 8s ease-in-out infinite alternate;
-        }
-        @keyframes bgWeird {
-            0% { filter: hue-rotate(0deg) blur(0px); }
-            50% { filter: hue-rotate(60deg) blur(2px); }
-            100% { filter: hue-rotate(-30deg) blur(0px); }
-        }
-        h1 {
-            color: #ff00cc;
-            font-size: 3.2rem;
-            letter-spacing: 0.25em;
-            text-shadow: 0 0 30px #ff00cc, 0 0 10px #000, 2px 2px 0 #00ffe7;
-            margin-bottom: 0.5em;
-            animation: h1Weird 1.5s infinite alternate;
-        }
-        @keyframes h1Weird {
-            0% { transform: scale(1) rotate(-2deg); }
-            100% { transform: scale(1.08) rotate(2deg); }
-        }
-        p {
-            color: #e0baff;
-            font-size: 1.3rem;
-            background: rgba(30, 0, 40, 0.5);
-            padding: 1em 2em;
-            border-radius: 16px;
-            box-shadow: 0 2px 16px #ff00cc44, 0 0 10px #000 inset;
-            animation: pWeird 2.5s infinite alternate;
-        }
-        @keyframes pWeird {
-            0% { letter-spacing: 0.1em; }
-            100% { letter-spacing: 0.3em; }
-        }
-        .glow {
-            border: 2px dashed #ff00cc;
-            border-radius: 30px 10px 30px 10px;
-            box-shadow: 0 0 40px #ff00cc, 0 0 20px #000 inset;
-            padding: 2em 3em;
-            background: rgba(40, 0, 60, 0.8);
-            animation: glowWeird 2.2s infinite alternate;
-        }
-        @keyframes glowWeird {
-            0% { box-shadow: 0 0 40px #ff00cc, 0 0 20px #000 inset; }
-            100% { box-shadow: 0 0 80px #00ffe7, 0 0 40px #ff00cc inset; }
-        }
-        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@700&display=swap');
-    </style>
+    <title>0930</title>
 </head>
 <body>
-    <div class="glow">
-        <h1>詭異科技首頁</h1>
-        <p>你已進入一個詭異又神祕的網頁世界……<br>在這裡，科技與未知交織，請小心探索！</p>
-    </div>
+    <h1>唐詩三百首</h1>
+    <table border="1">
+        <tr>
+            <td>
+            柳宗元 《江雪》<br>
+            千山鳥飛絕，萬徑人蹤滅。<br>
+            孤舟蓑笠翁，獨釣寒江雪。<br>
+            </td>
+        <td><img src="pic1.png"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+            王維 《鹿柴》<br>
+            空山不見人，但聞人語響。<br>
+            返景入深林，復照青苔上。<br>
+            </td>
+        <td><img src="pic2.png"></td>
+        </tr>
+    </table>
 </body>
 </html>
