@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>設計感名片</title>
+  <style>
+    body {
+      background: #f3f3f3;
+      font-family: "Segoe UI", "微軟正黑體", Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      display: flex;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+      width: 420px;
+      min-height: 220px;
+    }
+    .card-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      background: linear-gradient(135deg, #ffb347 0%, #ffcc33 100%);
+    }
+    .hexagon {
+      width: 120px;
+      height: 120px;
+      clip-path: polygon(
+        50% 0%,
+        93% 25%,
+        93% 75%,
+        50% 100%,
+        7% 75%,
+        7% 25%
+      );
+      object-fit: cover;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+      border: 4px solid #fff;
+      background: #fff;
+    }
+    .card-right {
+      flex: 1;
+      padding: 32px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .name {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 8px;
+    }
+    .desc {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 16px;
+    }
+    .contact {
+      font-size: 1em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-left">
+      <img src="1.png" alt="Avatar" class="hexagon">
+    </div>
+    <div class="card-right">
+      <div class="name">李庠鋐</div>
+      <div class="desc">網頁設計師｜熱愛創意與美感</div>
+      <div class="contact">Email: ming@example.com<br>Phone: 0912-345678</div>
+    </div>
+  </div>
+</body>
+</html>
